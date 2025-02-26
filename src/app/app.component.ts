@@ -3,10 +3,8 @@ import { RouterOutlet } from "@angular/router";
 
 @Component({
     selector: "app-root",
-    imports: [RouterOutlet],
     templateUrl: "./app.component.html",
     styleUrl: "./app.component.scss",
+    imports: [RouterOutlet],
 })
-export class AppComponent {
-    title = "asymmetric-encryption-demo";
-}
+export class AppComponent {}

@@ -1,4 +1,194 @@
-/* You can add global styles to this file, and also import other style files */
+@use "@angular/material" as mat;
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+html {
+    @include mat.theme(
+        (
+            color: (
+                primary: mat.$green-palette,
+                tertiary: mat.$green-palette,
+                theme-type: light,
+            ),
+            typography: Roboto,
+            density: 0,
+        )
+    );
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+a,
+.clickable {
+    color: unset;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.not-clickable {
+    cursor: default !important;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-error {
+    color: var(--mat-sys-error);
+}
+
+.text-strong {
+    font-weight: bold;
+}
+
+.text-excerpt {
+    font-style: italic;
+    margin: 2rem 0;
+}
+
+.text-hint,
+.text-info {
+    font-size: 80%;
+
+    mat-icon {
+        vertical-align: bottom;
+    }
+}
+
+.text-hint {
+    font-style: italic;
+}
+
+.highlight-background {
+    animation: highlight-fade 1s ease-out;
+}
+
+@keyframes highlight-fade {
+    0% {
+        background-color: gold;
+    }
+    100% {
+        background-color: transparent;
+    }
+}
+
+.two-columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 1rem 0;
+    gap: 1rem;
+
+    & > * {
+        padding: 0 0.5rem;
+    }
+
+    &.with-divider {
+        gap: 0;
+
+        & > * {
+            padding: 0 1rem;
+            border-right: 1px solid var(--mat-sys-outline);
+
+            &:last-child {
+                border-right: none;
+            }
+        }
+
+        & > *:first-child {
+            padding-left: 0;
+        }
+
+        & > *:last-child {
+            padding-right: 0;
+        }
+    }
+
+    @media (max-width: 640px) {
+        grid-template-columns: 1fr;
+        gap: 0;
+
+        & > * {
+            padding: 0;
+        }
+
+        &.with-divider {
+            & > * {
+                border-right: none;
+                padding: 0;
+            }
+        }
+    }
+}
+
+mat-form-field {
+    width: 100%;
+}
+
+.mat-expansion-panel-header .mat-content {
+    padding-right: 1rem;
+}
+
+.chalkboard {
+    border: var(--mdc-filled-text-field-container-color, var(--mat-sys-surface-variant)) 1px solid;
+    border-radius: 4px;
+    padding: 0.5rem;
+
+    p {
+        margin: 0.5rem;
+        padding: 0;
+    }
+}
+
+.label {
+    font-size: 80%;
+}
+
+.flex-horizontal {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.flex-grow {
+    flex-grow: 1;
+}
+
+@keyframes shake {
+    0%,
+    2% {
+        transform: translateX(-3px);
+    }
+    6% {
+        transform: translateX(5px);
+    }
+    10% {
+        transform: translateX(-5px);
+    }
+    14% {
+        transform: translateX(5px);
+    }
+    18% {
+        transform: translateX(-3px);
+    }
+    20% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.shake-animation {
+    animation: shake 2s linear infinite;
+}
