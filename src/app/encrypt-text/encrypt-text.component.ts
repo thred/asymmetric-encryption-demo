@@ -62,6 +62,24 @@ export class EncryptTextComponent {
         "Set phasers to stun.",
         "You know what they call a Quarter Pounder with Cheese in Paris?",
         "Zed's dead, baby. Zed's dead.",
+        "Hasta la vista, baby.",
+        "You can't handle the truth!",
+        "I see dead people.",
+        "To infinity and beyond!",
+        "Just keep swimming.",
+        "Wingardium Leviosa.",
+        "After all this time? Always.",
+        "And theeen?",
+        "Let's go bowling, Dude.",
+        "Es irrt der Mensch, solang er strebt.",
+        "Der Worte sind genug gewechselt.",
+        "Der Wahn ist kurz, die Reu' ist lang.",
+        "Mit der Dummheit kämpfen Götter selbst vergebens.",
+        "Drum prüfe, wer sich ewig bindet.",
+        "Es ist der Geist, der sich den Körper baut.",
+        "Die Axt im Haus erspart den Zimmermann.",
+        "To be, or not to be, that is the question.",
+        "A horse! A horse! My kingdom for a horse!",
     ];
 
     readonly successRipple = viewChild("successRipple", { read: MatRipple });
@@ -74,7 +92,7 @@ export class EncryptTextComponent {
 
     readonly sourceText = persistent<string>(
         "asymmetric-encryption-demo.encrypt-number.source-text",
-        () => EncryptTextComponent.QUOTES[Math.floor(Math.random() * EncryptTextComponent.QUOTES.length)],
+        () => "Das ist ein Test.",
     );
 
     readonly sourceBytes = computed(() => Utils.stringToBytes(this.sourceText()));
@@ -131,12 +149,20 @@ export class EncryptTextComponent {
         });
     }
 
+    randomize(event: Event): void {
+        event.preventDefault();
+        event.stopPropagation();
+
+        this.sourceText.set(
+            EncryptTextComponent.QUOTES[Math.floor(Math.random() * EncryptTextComponent.QUOTES.length)],
+        );
+    }
+
     reset(event: Event): void {
         event.preventDefault();
         event.stopPropagation();
 
         this.linked.reset();
-        this.targetText.reset();
         this.sourceText.reset();
     }
 

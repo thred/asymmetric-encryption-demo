@@ -5,6 +5,15 @@
         <mat-form-field appearance="fill">
             <mat-label>Text</mat-label>
             <textarea matInput [(ngModel)]="sourceText" required rows="5" maxlength="1024"></textarea>
+            <button
+                mat-icon-button
+                matIconSuffix
+                (click)="randomize($event)"
+                [attr.aria-label]="'Zufälliger Text'"
+                title="Zufälliger Text"
+            >
+                <mat-icon>casino</mat-icon>
+            </button>
         </mat-form-field>
     </p>
 

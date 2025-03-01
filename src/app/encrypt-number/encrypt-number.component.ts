@@ -35,13 +35,13 @@ export class EncryptNumberComponent {
 
     readonly linked = persistent<boolean>("asymmetric-encryption-demo.encrypt-number.linked", () => true);
 
-    readonly decodedNumber = persistent<number>("asymmetric-encryption-demo.encrypt-number.decoded-number", () => 0);
+    readonly decodedNumber = persistent<number>("asymmetric-encryption-demo.encrypt-number.decoded-number", () => 1);
 
     readonly decodedNumberEncoded = computed(() =>
         Utils.encodeNumber(this.decodedNumber(), this.publicKey().e, this.publicKey().n),
     );
 
-    readonly encodedNumber = persistent<number>("asymmetric-encryption-demo.encrypt-number.encoded-number", () => 0);
+    readonly encodedNumber = persistent<number>("asymmetric-encryption-demo.encrypt-number.encoded-number", () => 1);
 
     readonly encodedNumberDecoded = computed(() =>
         Utils.decodeNumber(this.encodedNumber(), this.privateKey().d, this.privateKey().n),
@@ -59,17 +59,19 @@ export class EncryptNumberComponent {
         });
     }
 
+    randomize(event: Event): void {
+        event.preventDefault();
+        event.stopPropagation();
+
+        this.decodedNumber.set(Utils.randomInt(0, this.publicKey().n));
+    }
+
     reset(event: Event): void {
         event.preventDefault();
         event.stopPropagation();
 
         this.linked.reset();
-        this.encodedNumber.reset();
         this.decodedNumber.reset();
-    }
-
-    randomizeDecodedNumber(): void {
-        this.decodedNumber.set(Utils.randomInt(0, this.publicKey().n));
     }
 
     toggleLinked(): void {

@@ -1,4 +1,4 @@
-<h1>RSA Verschlüsselung</h1>
+<h1>RSA Verschlüsselung Demo</h1>
 
 <p class="text-excerpt">
     RSA (Rivest-Shamir-Adleman) ist eine Form der asymmetrischen Verschlüsselung, bei der die Sicherheit auf der
@@ -151,14 +151,25 @@
         <mat-expansion-panel-header>
             <mat-panel-title>Nummer verschlüsseln/entschlüsseln</mat-panel-title>
 
-            <button
-                mat-icon-button
-                (click)="encryptNumberComponent()?.reset($event)"
-                [attr.aria-label]="'Daten zurücksetzen'"
-                title="Daten zurücksetzen"
-            >
-                <mat-icon>cached</mat-icon>
-            </button>
+            <mat-action-list>
+                <button
+                    mat-icon-button
+                    (click)="encryptNumberComponent()?.randomize($event)"
+                    [attr.aria-label]="'Zufälliger Text'"
+                    title="Zufälliger Text"
+                >
+                    <mat-icon>casino</mat-icon>
+                </button>
+
+                <button
+                    mat-icon-button
+                    (click)="encryptNumberComponent()?.reset($event)"
+                    [attr.aria-label]="'Daten zurücksetzen'"
+                    title="Daten zurücksetzen"
+                >
+                    <mat-icon>cached</mat-icon>
+                </button>
+            </mat-action-list>
         </mat-expansion-panel-header>
 
         @if (!publicKey() || !privateKey()) {
@@ -176,14 +187,25 @@
         <mat-expansion-panel-header>
             <mat-panel-title>Text verschlüsseln/entschlüsseln</mat-panel-title>
 
-            <button
-                mat-icon-button
-                (click)="encryptTextComponent()?.reset($event)"
-                [attr.aria-label]="'Daten zurücksetzen'"
-                title="Daten zurücksetzen"
-            >
-                <mat-icon>cached</mat-icon>
-            </button>
+            <mat-action-list>
+                <button
+                    mat-icon-button
+                    (click)="encryptTextComponent()?.randomize($event)"
+                    [attr.aria-label]="'Zufälliger Text'"
+                    title="Zufälliger Text"
+                >
+                    <mat-icon>casino</mat-icon>
+                </button>
+
+                <button
+                    mat-icon-button
+                    (click)="encryptTextComponent()?.reset($event)"
+                    [attr.aria-label]="'Daten zurücksetzen'"
+                    title="Daten zurücksetzen"
+                >
+                    <mat-icon>cached</mat-icon>
+                </button>
+            </mat-action-list>
         </mat-expansion-panel-header>
 
         @if (!publicKey() || !privateKey()) {

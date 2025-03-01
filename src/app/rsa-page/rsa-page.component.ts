@@ -44,7 +44,7 @@ export class RsaPageComponent {
     readonly encryptNumberComponent = viewChild(EncryptNumberComponent);
     readonly encryptTextComponent = viewChild(EncryptTextComponent);
 
-    readonly section = persistent<Section>("asymmetric-encryption-demo.rsa.section", () => "generate-key-pair");
+    readonly section = persistent<Section>("asymmetric-encryption-demo.rsa.section", () => "encrypt-text");
 
     readonly publicKeyString = persistent<string>("asymmetric-encryption-demo.rsa.public-key", () => "91, 23");
 
