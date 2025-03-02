@@ -73,4 +73,14 @@ export class RsaPageComponent {
     highlightPrivateKeyField() {
         this.privateKeyRipple()?.launch({});
     }
+
+    openSection(section: Section) {
+        this.section.set(section);
+    }
+
+    closeSection(section: Section) {
+        if (this.section() === section) {
+            this.section.set("none");
+        }
+    }
 }

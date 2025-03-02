@@ -90,7 +90,9 @@
                 [matRippleCentered]="true"
                 #successRipple
             >
-                <app-check-mark [checked]="decodedTargetText() === sourceText() ? true : undefined"></app-check-mark>
+                <app-check-mark
+                    [checked]="decodedTargetText() === sourceText() ? true : linked() ? false : undefined"
+                ></app-check-mark>
             </span>
         </mat-form-field>
     </p>

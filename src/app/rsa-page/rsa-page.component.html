@@ -14,8 +14,8 @@
 <mat-accordion>
     <mat-expansion-panel
         [expanded]="section() === 'generate-key-pair'"
-        (opened)="section.set('generate-key-pair')"
-        (closed)="section.set('none')"
+        (opened)="openSection('generate-key-pair')"
+        (closed)="closeSection('generate-key-pair')"
     >
         <mat-expansion-panel-header>
             <mat-panel-title i18n>Schlüsselpaar erzeugen</mat-panel-title>
@@ -149,8 +149,8 @@
 <mat-accordion>
     <mat-expansion-panel
         [expanded]="section() === 'encrypt-number'"
-        (opened)="section.set('encrypt-number')"
-        (closed)="section.set('none')"
+        (opened)="openSection('encrypt-number')"
+        (closed)="closeSection('encrypt-number')"
     >
         <mat-expansion-panel-header>
             <mat-panel-title i18n>Nummer verschlüsseln/entschlüsseln</mat-panel-title>
@@ -187,8 +187,8 @@
 
     <mat-expansion-panel
         [expanded]="section() === 'encrypt-text'"
-        (opened)="section.set('encrypt-text')"
-        (closed)="section.set('none')"
+        (opened)="openSection('encrypt-text')"
+        (closed)="closeSection('encrypt-text')"
     >
         <mat-expansion-panel-header>
             <mat-panel-title i18n>Text verschlüsseln/entschlüsseln</mat-panel-title>

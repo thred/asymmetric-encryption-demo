@@ -47,6 +47,11 @@ export class Utils {
     }
 
     static bytesToString(numbers: Uint8Array): string {
+        // trim trailing 0 bytes (did occur due to different bit length when converting)
+        while (numbers[numbers.length - 1] === 0) {
+            numbers = numbers.slice(0, -1);
+        }
+
         return this.DECODER.decode(numbers);
     }
 

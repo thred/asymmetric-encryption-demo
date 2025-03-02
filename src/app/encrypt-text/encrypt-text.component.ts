@@ -80,6 +80,9 @@ export class EncryptTextComponent {
         "Die Axt im Haus erspart den Zimmermann.",
         "To be, or not to be, that is the question.",
         "A horse! A horse! My kingdom for a horse!",
+        "Leeloo Dallas, multipass.",
+        "Big bada boom.",
+        "Time not important, only life important.",
     ];
 
     readonly successRipple = viewChild("successRipple", { read: MatRipple });
