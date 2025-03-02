@@ -1,0 +1,14 @@
+{
+    "name": "asymmetric-encryption-demo",
+    "version": "1.0.0",
+    "description": "A demo for asymmetric encryption",
+    "main": "index.html",
+    "scripts": {
+        "start": "http-server -P http://localhost:8080 -c-1"
+    },
+    "dependencies": {
+        "http-server": "^14.1.1"
+    },
+    "author": "",
+    "license": "ISC"
+}
