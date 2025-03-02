@@ -15,7 +15,7 @@ export class CopyDirective {
     onClick() {
         this.clipboard.copy(this.appCopy());
 
-        this.snackBar.open("Wert wurde in Zwischenablage kopiert.", undefined, {
+        this.snackBar.open($localize`:@@clipboardCopyMessage:Wert wurde in Zwischenablage kopiert.`, undefined, {
             duration: 1000,
         });
     }

@@ -1,6 +1,11 @@
 {
     "search.exclude": {
-        "": true,
+        "dist/": true,
+        "node_modules/": true
+    },
+    "files.exclude": {
+        ".angular/": true,
+        "dist/": true,
         "node_modules/": true
     }
 }

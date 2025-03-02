@@ -4,10 +4,12 @@
     "scripts": {
         "ng": "ng",
         "start": "ng serve",
+        "start-en": "ng serve --configuration=en",
         "build": "ng build",
         "watch": "ng build --watch --configuration development",
         "test": "ng test",
-        "pretty": "npx prettier --write \"**/*.{ts,html,scss,json,yaml,yml}\""
+        "pretty": "npx prettier --write \"**/*.{ts,html,scss,json,yaml,yml}\"",
+        "extract-i18n": "ng extract-i18n --output-path src/locale"
     },
     "private": true,
     "dependencies": {
@@ -29,6 +31,7 @@
         "@angular-devkit/build-angular": "^19.1.8",
         "@angular/cli": "^19.1.8",
         "@angular/compiler-cli": "^19.1.0",
+        "@angular/localize": "^19.1.7",
         "@types/jasmine": "~5.1.0",
         "jasmine-core": "~5.5.0",
         "karma": "~6.4.0",

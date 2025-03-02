@@ -1,9 +1,9 @@
 <div>
-    <h3>Nummer verschlüsseln</h3>
+    <h3 i18n>Nummer verschlüsseln</h3>
 
     <p>
         <mat-form-field appearance="fill">
-            <mat-label>Zahl m (zu verschlüsseln)</mat-label>
+            <mat-label i18n>Zahl m (zu verschlüsseln)</mat-label>
             <input matInput [(ngModel)]="decodedNumber" type="number" min="0" [max]="publicKey().n - 1" required />
             <button
                 mat-icon-button
@@ -11,14 +11,15 @@
                 (click)="randomize($event)"
                 [attr.aria-label]="'Passende Zufallszahl erzeugen'"
                 title="Passende Zufallszahl erzeugen"
+                i18n-title
             >
                 <mat-icon>casino</mat-icon>
             </button>
-            <mat-error>Der Wert muss zwischen 0 und {{ publicKey().n - 1 }} liegen.</mat-error>
+            <mat-error i18n>Der Wert muss zwischen 0 und {{ publicKey().n - 1 }} liegen.</mat-error>
         </mat-form-field>
     </p>
 
-    <p>Die Zahl m wird mit dem <b>öffentlichen Schlüssel</b> (n, e) verschlüsselt.</p>
+    <p i18n>Die Zahl m wird mit dem <b>öffentlichen Schlüssel</b> (n, e) verschlüsselt.</p>
 
     <div class="chalkboard">
         <p>
@@ -73,7 +74,7 @@
 
     <p>
         <mat-form-field appearance="outline">
-            <mat-label>Verschlüsselte Zahl c</mat-label>
+            <mat-label i18n>Verschlüsselte Zahl c</mat-label>
             <input matInput [ngModel]="decodedNumberEncoded()" type="number" readonly />
             <button
                 mat-icon-button
@@ -81,6 +82,7 @@
                 [appCopy]="'' + decodedNumberEncoded()"
                 [attr.aria-label]="'Verschlüsselte Zahl kopieren'"
                 title="Verschlüsselte Zahl kopieren"
+                i18n-title
             >
                 <mat-icon>content_copy</mat-icon>
             </button>
@@ -89,11 +91,11 @@
 </div>
 
 <div>
-    <h3>Nummer entschlüsseln</h3>
+    <h3 i18n>Nummer entschlüsseln</h3>
 
     <p>
         <mat-form-field appearance="fill">
-            <mat-label>Zahl c (zu entschlüsseln)</mat-label>
+            <mat-label i18n>Zahl c (zu entschlüsseln)</mat-label>
             <input
                 matInput
                 [(ngModel)]="encodedNumber"
@@ -109,6 +111,7 @@
                 (click)="toggleLinked()"
                 [attr.aria-label]="'Automatisch von verschlüsselter Zahl übernehmen'"
                 title="Automatisch von verschlüsselter Zahl übernehmen"
+                i18n-title
             >
                 @if (linked()) {
                     <mat-icon>link</mat-icon>
@@ -116,10 +119,10 @@
                     <mat-icon>link_off</mat-icon>
                 }
             </button>
-            <mat-error>Der Wert muss zwischen 0 und {{ privateKey().n - 1 }} liegen.</mat-error>
+            <mat-error i18n>Der Wert muss zwischen 0 und {{ privateKey().n - 1 }} liegen.</mat-error>
 
             @if (linked()) {
-                <mat-hint align="end">
+                <mat-hint align="end" i18n>
                     Als Wert wird automatisch c übernommen (<a (click)="toggleLinked()" class="clickable"
                         >deaktivieren</a
                     >).
@@ -128,7 +131,7 @@
         </mat-form-field>
     </p>
 
-    <p>Die Zahl c wird mit dem <b>privaten Schlüssel</b> (n, d) entschlüsselt.</p>
+    <p i18n>Die Zahl c wird mit dem <b>privaten Schlüssel</b> (n, d) entschlüsselt.</p>
 
     <div class="chalkboard">
         <p>
@@ -183,7 +186,7 @@
 
     <p>
         <mat-form-field appearance="outline">
-            <mat-label>Entschlüsselte Zahl m</mat-label>
+            <mat-label i18n>Entschlüsselte Zahl m</mat-label>
             <input matInput [ngModel]="encodedNumberDecoded()" type="number" readonly />
             <span
                 matIconSuffix

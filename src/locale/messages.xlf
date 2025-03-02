@@ -1,0 +1,718 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file source-language="de" datatype="plaintext" original="ng2.template">
+        <body>
+            <trans-unit id="clipboardCopyMessage" datatype="html">
+                <source>Wert wurde in Zwischenablage kopiert.</source>
+                <context-group purpose="location">
+                    <context context-type="sourcefile">src/app/directives/copy.directive.ts</context>
+                    <context context-type="linenumber">18</context>
+                </context-group>
+            </trans-unit>
+            <trans-unit id="6230911366844455063" datatype="html">
+                <source>Nummer verschlüsseln</source>
+                <context-group purpose="location">
+                    <context context-type="sourcefile">
+                        src/app/encrypt-number/encrypt-number.component.html</context>
+                    <context context-type="linenumber">2,4</context>
+                </context-group>
+            </trans-unit>
+            <trans-unit id="7281891512585473723" datatype="html">
+                <source>Zahl m (zu verschlüsseln)</source>
+                <context-group purpose="location">
+                    <context context-type="sourcefile">
+                        src/app/encrypt-number/encrypt-number.component.html</context>
+                    <context context-type="linenumber">6</context>
+                </context-group>
+            </trans-unit>
+            <trans-unit id="4023753187758835510" datatype="html">
+                <source>Passende Zufallszahl erzeugen</source>
+                <context-group purpose="location">
+                    <context context-type="sourcefile">
+                        src/app/encrypt-number/encrypt-number.component.html</context>
+                    <context context-type="linenumber">13,14</context>
+                </context-group>
+                <context-group purpose="location">
+                    <context context-type="sourcefile">
+                        src/app/generate-key-pair/generate-key-pair.component.html</context>
+                    <context context-type="linenumber">35,36</context>
+                </context-group>
+                <context-group purpose="location">
+                    <context context-type="sourcefile">
+                        src/app/generate-key-pair/generate-key-pair.component.html</context>
+                    <context context-type="linenumber">61,62</context>
+                </context-group>
+                <context-group purpose="location">
+                    <context context-type="sourcefile">
+                        src/app/generate-key-pair/generate-key-pair.component.html</context>
+                    <context context-type="linenumber">250,251</context>
+                </context-group>
+            </trans-unit>
+            <trans-unit id="4207517500380516922" datatype="html">
+                <source>Der Wert muss zwischen 0 und <x id="INTERPOLATION"
+                        equiv-text="{{ publicKey().n - 1 }}" /> liegen.</source>
+                <context-group purpose="location">
+                    <context context-type="sourcefile">
+                        src/app/encrypt-number/encrypt-number.component.html</context>
+                    <context context-type="linenumber">18,19</context>
+                </context-group>
+                <context-group purpose="location">
+                    <context context-type="sourcefile">
+                        src/app/encrypt-number/encrypt-number.component.html</context>
+                    <context context-type="linenumber">122,124</context>
+                </context-group>
+            </trans-unit>
+            <trans-unit id="6555448279575316000" datatype="html">
+                <source>Die Zahl m wird mit dem <x id="START_BOLD_TEXT" ctype="x-b"
+                        equiv-text="&lt;b&gt;" />öffentlichen Schlüssel<x id="CLOSE_BOLD_TEXT"
+                        ctype="x-b" equiv-text="&lt;/b&gt;" /> (n, e) verschlüsselt.</source>
+                <context-group purpose="location">
+                    <context context-type="sourcefile">
+                        src/app/encrypt-number/encrypt-number.component.html</context>
+                    <context context-type="linenumber">22,24</context>
+                </context-group>
+            </trans-unit>
+            <trans-unit id="7791801515984675822" datatype="html">
+                <source>Verschlüsselte Zahl c</source>
+                <context-group purpose="location">
+                    <context context-type="sourcefile">
+                        src/app/encrypt-number/encrypt-number.component.html</context>
+                    <context context-type="linenumber">77</context>
+                </context-group>
+            </trans-unit>
+            <trans-unit id="2219259645224342653" datatype="html">
+                <source>Verschlüsselte Zahl kopieren</source>
+                <context-group purpose="location">
+                    <context context-type="sourcefile">
+                        src/app/encrypt-number/encrypt-number.component.html</context>
+                    <context context-type="linenumber">84,85</context>
+                </context-group>
+            </trans-unit>
+            <trans-unit id="588904607093771394" datatype="html">
+                <source>Nummer entschlüsseln</source>
+                <context-group purpose="location">
+                    <context context-type="sourcefile">
+                        src/app/encrypt-number/encrypt-number.component.html</context>
+                    <context context-type="linenumber">94,96</context>
+                </context-group>
+            </trans-unit>
+            <trans-unit id="5962154134214578263" datatype="html">
+                <source>Zahl c (zu entschlüsseln)</source>
+                <context-group purpose="location">
+                    <context context-type="sourcefile">
+                        src/app/encrypt-number/encrypt-number.component.html</context>
+                    <context context-type="linenumber">98</context>
+                </context-group>
+            </trans-unit>
+            <trans-unit id="7270702498804412896" datatype="html">
+                <source>Automatisch von verschlüsselter Zahl übernehmen</source>
+                <context-group purpose="location">
+                    <context context-type="sourcefile">
+                        src/app/encrypt-number/encrypt-number.component.html</context>
+                    <context context-type="linenumber">113,114</context>
+                </context-group>
+            </trans-unit>
+            <trans-unit id="3023615021168787241" datatype="html">
+                <source> Als Wert wird automatisch c übernommen (<x id="START_LINK" ctype="x-a"
+                        equiv-text="&lt;a (click)=&quot;toggleLinked()&quot; class=&quot;clickable&quot;
+                        &gt;" />
+                    deaktivieren<x id="CLOSE_LINK" ctype="x-a"
+                        equiv-text="&lt;/a
+                    &gt;" />). </source>
+                <context-group purpose="location">
+                    <context context-type="sourcefile">
+                        src/app/encrypt-number/encrypt-number.component.html</context>
+                    <context context-type="linenumber">126,129</context>
+                </context-group>
+            </trans-unit>
+            <trans-unit id="6179946675183708547" datatype="html">
+                <source>Die Zahl c wird mit dem <x id="START_BOLD_TEXT" ctype="x-b"
+                        equiv-text="&lt;b&gt;" />privaten Schlüssel<x id="CLOSE_BOLD_TEXT"
+                        ctype="x-b" equiv-text="&lt;/b&gt;" /> (n, d) entschlüsselt.</source>
+                <context-group purpose="location">
+                    <context context-type="sourcefile">
+                        src/app/encrypt-number/encrypt-number.component.html</context>
+                    <context context-type="linenumber">134,136</context>
+                </context-group>
+            </trans-unit>
+            <trans-unit id="8799747893663856607" datatype="html">
+                <source>Entschlüsselte Zahl m</source>
+                <context-group purpose="location">
+                    <context context-type="sourcefile">
+                        src/app/encrypt-number/encrypt-number.component.html</context>
+                    <context context-type="linenumber">189</context>
+                </context-group>
+            </trans-unit>
+            <trans-unit id="4134570525836768161" datatype="html">
+                <source>Text verschlüsseln</source>
+                <context-group purpose="location">
+                    <context context-type="sourcefile">
+                        src/app/encrypt-text/encrypt-text.component.html</context>
+                    <context context-type="linenumber">2,4</context>
+                </context-group>
+            </trans-unit>
+            <trans-unit id="6162693758764653365" datatype="html">
+                <source>Text</source>
+                <context-group purpose="location">
+                    <context context-type="sourcefile">
+                        src/app/encrypt-text/encrypt-text.component.html</context>
+                    <context context-type="linenumber">6</context>
+                </context-group>
+            </trans-unit>
+            <trans-unit id="7724968222645139290" datatype="html">
+                <source>Zufälliger Text</source>
+                <context-group purpose="location">
+                    <context context-type="sourcefile">
+                        src/app/encrypt-text/encrypt-text.component.html</context>
+                    <context context-type="linenumber">13,14</context>
+                </context-group>
+                <context-group purpose="location">
+                    <context context-type="sourcefile">src/app/rsa-page/rsa-page.component.html</context>
+                    <context context-type="linenumber">163,164</context>
+                </context-group>
+                <context-group purpose="location">
+                    <context context-type="sourcefile">src/app/rsa-page/rsa-page.component.html</context>
+                    <context context-type="linenumber">201,202</context>
+                </context-group>
+            </trans-unit>
+            <trans-unit id="7848419641874525791" datatype="html">
+                <source>Der Text wird mit dem <x id="START_BOLD_TEXT" ctype="x-b"
+                        equiv-text="&lt;b&gt;" />öffentlichen Schlüssel<x id="CLOSE_BOLD_TEXT"
+                        ctype="x-b" equiv-text="&lt;/b&gt;" /> (n, e) verschlüsselt.</source>
+                <context-group purpose="location">
+                    <context context-type="sourcefile">
+                        src/app/encrypt-text/encrypt-text.component.html</context>
+                    <context context-type="linenumber">21,24</context>
+                </context-group>
+            </trans-unit>
+            <trans-unit id="2446896142364914424" datatype="html">
+                <source>Verschlüsselter Text</source>
+                <context-group purpose="location">
+                    <context context-type="sourcefile">
+                        src/app/encrypt-text/encrypt-text.component.html</context>
+                    <context context-type="linenumber">25</context>
+                </context-group>
+                <context-group purpose="location">
+                    <context context-type="sourcefile">
+                        src/app/encrypt-text/encrypt-text.component.html</context>
+                    <context context-type="linenumber">46</context>
+                </context-group>
+            </trans-unit>
+            <trans-unit id="4062593098640637464" datatype="html">
+                <source>Verschlüsselten Text kopieren</source>
+                <context-group purpose="location">
+                    <context context-type="sourcefile">
+                        src/app/encrypt-text/encrypt-text.component.html</context>
+                    <context context-type="linenumber">32,33</context>
+                </context-group>
+            </trans-unit>
+            <trans-unit id="5179341670067888069" datatype="html">
+                <source>Text entschlüsseln</source>
+                <context-group purpose="location">
+                    <context context-type="sourcefile">
+                        src/app/encrypt-text/encrypt-text.component.html</context>
+                    <context context-type="linenumber">42,44</context>
+                </context-group>
+            </trans-unit>
+            <trans-unit id="6193390232923944853" datatype="html">
+                <source>Automatisch von verschlüsseltem Text übernehmen</source>
+                <context-group purpose="location">
+                    <context context-type="sourcefile">
+                        src/app/encrypt-text/encrypt-text.component.html</context>
+                    <context context-type="linenumber">60,61</context>
+                </context-group>
+            </trans-unit>
+            <trans-unit id="5003951594181112072" datatype="html">
+                <source> Der Text wird automatisch übernommen (<x id="START_LINK" ctype="x-a"
+                        equiv-text="&lt;a (click)=&quot;toggleLinked()&quot; class=&quot;clickable&quot;&gt;" />
+                    deaktivieren<x id="CLOSE_LINK" ctype="x-a"
+                        equiv-text="&lt;/a
+                    &gt;" />). </source>
+                <context-group purpose="location">
+                    <context context-type="sourcefile">
+                        src/app/encrypt-text/encrypt-text.component.html</context>
+                    <context context-type="linenumber">72,74</context>
+                </context-group>
+            </trans-unit>
+            <trans-unit id="1402773995012025985" datatype="html">
+                <source>Der Text wird mit dem <x id="START_BOLD_TEXT" ctype="x-b"
+                        equiv-text="&lt;b&gt;" />privaten Schlüssel<x id="CLOSE_BOLD_TEXT"
+                        ctype="x-b" equiv-text="&lt;/b&gt;" /> (n, d) entschlüsselt.</source>
+                <context-group purpose="location">
+                    <context context-type="sourcefile">
+                        src/app/encrypt-text/encrypt-text.component.html</context>
+                    <context context-type="linenumber">79,82</context>
+                </context-group>
+            </trans-unit>
+            <trans-unit id="8925083731571622961" datatype="html">
+                <source>Entschlüsselter Text</source>
+                <context-group purpose="location">
+                    <context context-type="sourcefile">
+                        src/app/encrypt-text/encrypt-text.component.html</context>
+                    <context context-type="linenumber">83</context>
+                </context-group>
+            </trans-unit>
+            <trans-unit id="3499591788768793169" datatype="html">
+                <source>Asymmetric Encryption Demo</source>
+                <context-group purpose="location">
+                    <context context-type="sourcefile">src/app/footer/footer.component.html</context>
+                    <context context-type="linenumber">2</context>
+                </context-group>
+            </trans-unit>
+            <trans-unit id="3720837939752270237" datatype="html">
+                <source>Quellen:</source>
+                <context-group purpose="location">
+                    <context context-type="sourcefile">src/app/footer/footer.component.html</context>
+                    <context context-type="linenumber">4,5</context>
+                </context-group>
+            </trans-unit>
+            <trans-unit id="2494979043426179428" datatype="html">
+                <source>https://www.onebigfluke.com/2013/11/public-key-crypto-math-explained.html</source>
+                <context-group purpose="location">
+                    <context context-type="sourcefile">src/app/footer/footer.component.html</context>
+                    <context context-type="linenumber">6,7</context>
+                </context-group>
+            </trans-unit>
+            <trans-unit id="6724910874448022442" datatype="html">
+                <source>One Big Fluke</source>
+                <context-group purpose="location">
+                    <context context-type="sourcefile">src/app/footer/footer.component.html</context>
+                    <context context-type="linenumber">10,11</context>
+                </context-group>
+            </trans-unit>
+            <trans-unit id="5688242071393338151" datatype="html">
+                <source>https://de.wikipedia.org/wiki/RSA-Kryptosystem</source>
+                <context-group purpose="location">
+                    <context context-type="sourcefile">src/app/footer/footer.component.html</context>
+                    <context context-type="linenumber">12</context>
+                </context-group>
+            </trans-unit>
+            <trans-unit id="1288197598673660233" datatype="html">
+                <source>Wikipedia RSA-Kryptosystem</source>
+                <context-group purpose="location">
+                    <context context-type="sourcefile">src/app/footer/footer.component.html</context>
+                    <context context-type="linenumber">13,14</context>
+                </context-group>
+            </trans-unit>
+            <trans-unit id="5274253412917765877" datatype="html">
+                <source>https://github.com/thred/asymmetric-encryption-demo</source>
+                <context-group purpose="location">
+                    <context context-type="sourcefile">src/app/footer/footer.component.html</context>
+                    <context context-type="linenumber">18</context>
+                </context-group>
+            </trans-unit>
+            <trans-unit id="387939326372419602" datatype="html">
+                <source>GitHub Repository</source>
+                <context-group purpose="location">
+                    <context context-type="sourcefile">src/app/footer/footer.component.html</context>
+                    <context context-type="linenumber">18,19</context>
+                </context-group>
+            </trans-unit>
+            <trans-unit id="4292512134542201156" datatype="html">
+                <source> Das Schlüsselpaar (Public und Private Key genannt) wird aus zwei <x
+                        id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;" />sehr großen
+                    Primzahlen<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;" /> p und q
+                    erzeugt. </source>
+                <context-group purpose="location">
+                    <context context-type="sourcefile">
+                        src/app/generate-key-pair/generate-key-pair.component.html</context>
+                    <context context-type="linenumber">2,6</context>
+                </context-group>
+            </trans-unit>
+            <trans-unit id="1912505016483270241" datatype="html">
+                <source> Um das Verfahren zu demonstrieren, verwenden wir <x id="START_BOLD_TEXT"
+                        ctype="x-b" equiv-text="&lt;b&gt;" />sehr kleine <x id="START_LINK"
+                        ctype="x-a"
+                        equiv-text="&lt;a href=&quot;https://de.wikipedia.org/wiki/Primzahl&quot; target=&quot;_blank&quot; i18n-href&gt;" />
+                    Primzahlen<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;" /><x
+                        id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b
+    &gt;" />. <x
+                        id="START_TAG_SPAN" ctype="x-span"
+                        equiv-text="&lt;span class=&quot;text-error&quot;&gt;" />Das ist aber nicht
+                    sicher!<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;" /> Um
+                    das Verfahren wirklich sicher zu machen, müssten wir zwei Primzahlen mit mehr
+                    als 600 Stellen verwenden (2 × 2048-Bit). </source>
+                <context-group purpose="location">
+                    <context context-type="sourcefile">
+                        src/app/generate-key-pair/generate-key-pair.component.html</context>
+                    <context context-type="linenumber">6,12</context>
+                </context-group>
+            </trans-unit>
+            <trans-unit id="2054914547862851947" datatype="html">
+                <source>https://de.wikipedia.org/wiki/Primzahl</source>
+                <context-group purpose="location">
+                    <context context-type="sourcefile">
+                        src/app/generate-key-pair/generate-key-pair.component.html</context>
+                    <context context-type="linenumber">7</context>
+                </context-group>
+            </trans-unit>
+            <trans-unit id="6078461106470331132" datatype="html">
+                <source> Drücke den <x id="START_TAG_MAT_ICON" ctype="x-mat_icon"
+                        equiv-text="&lt;mat-icon inline&gt;" />casino<x id="CLOSE_TAG_MAT_ICON"
+                        ctype="x-mat_icon" equiv-text="&lt;/mat-icon&gt;" /> Würfel, um eine
+                    passende Zufallszahl zu finden. </source>
+                <context-group purpose="location">
+                    <context context-type="sourcefile">
+                        src/app/generate-key-pair/generate-key-pair.component.html</context>
+                    <context context-type="linenumber">13,16</context>
+                </context-group>
+            </trans-unit>
+            <trans-unit id="1087540425381134379" datatype="html">
+                <source>Primzahl p</source>
+                <context-group purpose="location">
+                    <context context-type="sourcefile">
+                        src/app/generate-key-pair/generate-key-pair.component.html</context>
+                    <context context-type="linenumber">20</context>
+                </context-group>
+            </trans-unit>
+            <trans-unit id="4877470609941637391" datatype="html">
+                <source>Der Wert p muss eine Primzahl ≥ 3 sein.</source>
+                <context-group purpose="location">
+                    <context context-type="sourcefile">
+                        src/app/generate-key-pair/generate-key-pair.component.html</context>
+                    <context context-type="linenumber">40</context>
+                </context-group>
+            </trans-unit>
+            <trans-unit id="155639018326507592" datatype="html">
+                <source>Primzahl q</source>
+                <context-group purpose="location">
+                    <context context-type="sourcefile">
+                        src/app/generate-key-pair/generate-key-pair.component.html</context>
+                    <context context-type="linenumber">46</context>
+                </context-group>
+            </trans-unit>
+            <trans-unit id="3985003402240650784" datatype="html">
+                <source>Der Wert q muss eine Primzahl ≥ 3 sein.</source>
+                <context-group purpose="location">
+                    <context context-type="sourcefile">
+                        src/app/generate-key-pair/generate-key-pair.component.html</context>
+                    <context context-type="linenumber">66</context>
+                </context-group>
+            </trans-unit>
+            <trans-unit id="172516350094339341" datatype="html">
+                <source>Die zwei Primzahlen p und q werden multipliziert.</source>
+                <context-group purpose="location">
+                    <context context-type="sourcefile">
+                        src/app/generate-key-pair/generate-key-pair.component.html</context>
+                    <context context-type="linenumber">73,75</context>
+                </context-group>
+            </trans-unit>
+            <trans-unit id="2936089522850526678" datatype="html">
+                <source> Diese Zahl ist öffentlich bekannt. Wenn die Primzahlen groß genug sind,
+                    dann kann man sie nicht mehr ermitteln. </source>
+                <context-group purpose="location">
+                    <context context-type="sourcefile">
+                        src/app/generate-key-pair/generate-key-pair.component.html</context>
+                    <context context-type="linenumber">76,77</context>
+                </context-group>
+            </trans-unit>
+            <trans-unit id="7883932455995149865" datatype="html">
+                <source> Die <x id="START_LINK" ctype="x-a"
+                        equiv-text="&lt;a href=&quot;https://de.wikipedia.org/wiki/Eulersche_Phi-Funktion&quot; target=&quot;_blank&quot; i18n-href
+                &gt;" />Eulersche
+                    φ-Funktion<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a
+            &gt;" />
+                    wird angewendet. </source>
+                <context-group purpose="location">
+                    <context context-type="sourcefile">
+                        src/app/generate-key-pair/generate-key-pair.component.html</context>
+                    <context context-type="linenumber">122,127</context>
+                </context-group>
+            </trans-unit>
+            <trans-unit id="7994079892001820404" datatype="html">
+                <source>https://de.wikipedia.org/wiki/Eulersche_Phi-Funktion</source>
+                <context-group purpose="location">
+                    <context context-type="sourcefile">
+                        src/app/generate-key-pair/generate-key-pair.component.html</context>
+                    <context context-type="linenumber">123</context>
+                </context-group>
+            </trans-unit>
+            <trans-unit id="1997465183710462634" datatype="html">
+                <source> Eine Zufallszahl e wird gewählt, die kleiner als φ und <x id="START_LINK"
+                        ctype="x-a"
+                        equiv-text="&lt;a href=&quot;https://de.wikipedia.org/wiki/Teilerfremdheit&quot; target=&quot;_blank&quot; i18n-href&gt;" />
+                    teilerfremd<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;" /> zu φ ist. </source>
+                <context-group purpose="location">
+                    <context context-type="sourcefile">
+                        src/app/generate-key-pair/generate-key-pair.component.html</context>
+                    <context context-type="linenumber">195,197</context>
+                </context-group>
+            </trans-unit>
+            <trans-unit id="9104040390080291423" datatype="html">
+                <source>https://de.wikipedia.org/wiki/Teilerfremdheit</source>
+                <context-group purpose="location">
+                    <context context-type="sourcefile">
+                        src/app/generate-key-pair/generate-key-pair.component.html</context>
+                    <context context-type="linenumber">196</context>
+                </context-group>
+            </trans-unit>
+            <trans-unit id="9141748817408391995" datatype="html">
+                <source>Zufallszahl e</source>
+                <context-group purpose="location">
+                    <context context-type="sourcefile">
+                        src/app/generate-key-pair/generate-key-pair.component.html</context>
+                    <context context-type="linenumber">234</context>
+                </context-group>
+            </trans-unit>
+            <trans-unit id="6085763751460368347" datatype="html">
+                <source> Der Wert e muss ≤ <x id="INTERPOLATION" equiv-text="{{ phi() }}" /> und
+                    teilerfremd zu <x id="INTERPOLATION" equiv-text="{{ phi() }}" /> sein. </source>
+                <context-group purpose="location">
+                    <context context-type="sourcefile">
+                        src/app/generate-key-pair/generate-key-pair.component.html</context>
+                    <context context-type="linenumber">255,256</context>
+                </context-group>
+            </trans-unit>
+            <trans-unit id="8443304143309858549" datatype="html">
+                <source>Diese Zahl ist Teil des öffentlichen Schlüssels.</source>
+                <context-group purpose="location">
+                    <context context-type="sourcefile">
+                        src/app/generate-key-pair/generate-key-pair.component.html</context>
+                    <context context-type="linenumber">256</context>
+                </context-group>
+            </trans-unit>
+            <trans-unit id="5192268194219544519" datatype="html">
+                <source> Der Wert d wird mit Hilfe der <x id="START_LINK" ctype="x-a"
+                        equiv-text="&lt;a href=&quot;https://en.wikipedia.org/wiki/Modular_multiplicative_inverse&quot; target=&quot;_blank&quot; i18n-href
+                    &gt;" />modularen
+                    multiplikativen Inverse<x id="CLOSE_LINK" ctype="x-a"
+                        equiv-text="&lt;/a
+                &gt;" /> berechnet. </source>
+                <context-group purpose="location">
+                    <context context-type="sourcefile">
+                        src/app/generate-key-pair/generate-key-pair.component.html</context>
+                    <context context-type="linenumber">263,267</context>
+                </context-group>
+            </trans-unit>
+            <trans-unit id="4964471697424905519" datatype="html">
+                <source>https://en.wikipedia.org/wiki/Modular_multiplicative_inverse</source>
+                <context-group purpose="location">
+                    <context context-type="sourcefile">
+                        src/app/generate-key-pair/generate-key-pair.component.html</context>
+                    <context context-type="linenumber">264</context>
+                </context-group>
+            </trans-unit>
+            <trans-unit id="2706640971119715278" datatype="html">
+                <source> Diese Zahl ist Teil des privaten Schlüssels und daher geheim. Sie darf <x
+                        id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;" />nicht<x
+                        id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;" /> veröffentlicht
+                    werden. </source>
+                <context-group purpose="location">
+                    <context context-type="sourcefile">
+                        src/app/generate-key-pair/generate-key-pair.component.html</context>
+                    <context context-type="linenumber">271,273</context>
+                </context-group>
+            </trans-unit>
+            <trans-unit id="7857018857545938686" datatype="html">
+                <source><x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;" />Klicke auf den
+                    Button, um das Schlüsselpaar zu erzeugen.<x id="CLOSE_BOLD_TEXT" ctype="x-b"
+                        equiv-text="&lt;/b&gt;" /></source>
+                <context-group purpose="location">
+                    <context context-type="sourcefile">
+                        src/app/generate-key-pair/generate-key-pair.component.html</context>
+                    <context context-type="linenumber">330,332</context>
+                </context-group>
+            </trans-unit>
+            <trans-unit id="385131670886499620" datatype="html">
+                <source> Behebe zuerst noch die Fehler in den Eingabefeldern weiter oben oder <x
+                        id="START_LINK" ctype="x-a"
+                        equiv-text="&lt;a class=&quot;clickable&quot; (click)=&quot;reset($event)&quot;&gt;" />setzte
+                    die Eingabefelder zurück<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;" />
+                    ! </source>
+                <context-group purpose="location">
+                    <context context-type="sourcefile">
+                        src/app/generate-key-pair/generate-key-pair.component.html</context>
+                    <context context-type="linenumber">334,336</context>
+                </context-group>
+            </trans-unit>
+            <trans-unit id="3143834062183578964" datatype="html">
+                <source> Die Werte von e und d sind gleich. Wähle andere Primzahlen oder finde eine
+                    andere Zahl für e! </source>
+                <context-group purpose="location">
+                    <context context-type="sourcefile">
+                        src/app/generate-key-pair/generate-key-pair.component.html</context>
+                    <context context-type="linenumber">339</context>
+                </context-group>
+            </trans-unit>
+            <trans-unit id="783100501184759601" datatype="html">
+                <source> Du kannst auch die <x id="START_LINK" ctype="x-a"
+                        equiv-text="&lt;a class=&quot;clickable&quot; (click)=&quot;reset($event)&quot;&gt;" />Eingabefelder
+                    zurücksetzen<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;" />! </source>
+                <context-group purpose="location">
+                    <context context-type="sourcefile">
+                        src/app/generate-key-pair/generate-key-pair.component.html</context>
+                    <context context-type="linenumber">343,344</context>
+                </context-group>
+            </trans-unit>
+            <trans-unit id="6330167239991838098" datatype="html">
+                <source> Schlüsselpaar erzeugen </source>
+                <context-group purpose="location">
+                    <context context-type="sourcefile">
+                        src/app/generate-key-pair/generate-key-pair.component.html</context>
+                    <context context-type="linenumber">356</context>
+                </context-group>
+            </trans-unit>
+            <trans-unit id="1425173014701852801" datatype="html">
+                <source>RSA Verschlüsselung Demo</source>
+                <context-group purpose="location">
+                    <context context-type="sourcefile">src/app/rsa-page/rsa-page.component.html</context>
+                    <context context-type="linenumber">1,3</context>
+                </context-group>
+            </trans-unit>
+            <trans-unit id="3357047165328121512" datatype="html">
+                <source> RSA (Rivest-Shamir-Adleman) ist eine Form der asymmetrischen
+                    Verschlüsselung, bei der die Sicherheit auf der Schwierigkeit basiert, eine
+                    (sehr) große Zahl in ihre Primfaktoren zu zerlegen.
+</source>
+                <context-group purpose="location">
+                    <context context-type="sourcefile">src/app/rsa-page/rsa-page.component.html</context>
+                    <context context-type="linenumber">4,6</context>
+                </context-group>
+            </trans-unit>
+            <trans-unit id="343787368330350488" datatype="html">
+                <source> Das Besondere an asymmetrischen Verschlüsselungen ist, dass der geheime
+                    private Schlüssel zum Verschlüsseln einer Nachricht nicht benötigt wird. Er muss
+                    daher nicht an den Absender übertragen werden und kann völlig geheim bleiben.
+                    Der Absender erhält nur den öffentlichen Schlüssel, mit dem die Nachricht nicht
+                    entschlüsselt werden kann.
+</source>
+                <context-group purpose="location">
+                    <context context-type="sourcefile">src/app/rsa-page/rsa-page.component.html</context>
+                    <context context-type="linenumber">9,11</context>
+                </context-group>
+            </trans-unit>
+            <trans-unit id="985317532139480281" datatype="html">
+                <source>Schlüsselpaar erzeugen</source>
+                <context-group purpose="location">
+                    <context context-type="sourcefile">src/app/rsa-page/rsa-page.component.html</context>
+                    <context context-type="linenumber">21</context>
+                </context-group>
+            </trans-unit>
+            <trans-unit id="3656407163540975873" datatype="html">
+                <source>Zufälligers Schlüsselpaar erzeugen</source>
+                <context-group purpose="location">
+                    <context context-type="sourcefile">src/app/rsa-page/rsa-page.component.html</context>
+                    <context context-type="linenumber">28,29</context>
+                </context-group>
+            </trans-unit>
+            <trans-unit id="3822925204592100450" datatype="html">
+                <source>Daten zurücksetzen</source>
+                <context-group purpose="location">
+                    <context context-type="sourcefile">src/app/rsa-page/rsa-page.component.html</context>
+                    <context context-type="linenumber">38,39</context>
+                </context-group>
+                <context-group purpose="location">
+                    <context context-type="sourcefile">src/app/rsa-page/rsa-page.component.html</context>
+                    <context context-type="linenumber">173,174</context>
+                </context-group>
+                <context-group purpose="location">
+                    <context context-type="sourcefile">src/app/rsa-page/rsa-page.component.html</context>
+                    <context context-type="linenumber">211,212</context>
+                </context-group>
+            </trans-unit>
+            <trans-unit id="6131776212959618172" datatype="html">
+                <source> Der <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;" />öffentliche
+                    Schlüssel<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;" /> besteht
+                    aus den Werten von n und e und wird zum <x id="START_BOLD_TEXT" ctype="x-b"
+                        equiv-text="&lt;b&gt;" />Verschlüsseln von Nachrichten<x
+                        id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;" /> verwendet. </source>
+                <context-group purpose="location">
+                    <context context-type="sourcefile">src/app/rsa-page/rsa-page.component.html</context>
+                    <context context-type="linenumber">60,63</context>
+                </context-group>
+            </trans-unit>
+            <trans-unit id="1868107353016902133" datatype="html">
+                <source>Public Key (n, e)</source>
+                <context-group purpose="location">
+                    <context context-type="sourcefile">src/app/rsa-page/rsa-page.component.html</context>
+                    <context context-type="linenumber">72</context>
+                </context-group>
+            </trans-unit>
+            <trans-unit id="6406890286918279357" datatype="html">
+                <source>Public Key kopieren</source>
+                <context-group purpose="location">
+                    <context context-type="sourcefile">src/app/rsa-page/rsa-page.component.html</context>
+                    <context context-type="linenumber">86,87</context>
+                </context-group>
+            </trans-unit>
+            <trans-unit id="7886682405645111039" datatype="html">
+                <source> Das Format ist nicht korrekt. <x id="START_LINK" ctype="x-a"
+                        equiv-text="&lt;a class=&quot;clickable&quot; (click)=&quot;generateKeyPair()&quot;&gt;" />Erzeuge
+                    ein Schlüsselpaar!<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;" /></source>
+                <context-group purpose="location">
+                    <context context-type="sourcefile">src/app/rsa-page/rsa-page.component.html</context>
+                    <context context-type="linenumber">92,94</context>
+                </context-group>
+                <context-group purpose="location">
+                    <context context-type="sourcefile">src/app/rsa-page/rsa-page.component.html</context>
+                    <context context-type="linenumber">138,140</context>
+                </context-group>
+            </trans-unit>
+            <trans-unit id="7797708102740927892" datatype="html">
+                <source> Wenn du den öffentlichen Schlüssel an andere Personen weitergibst, dann
+                    können sie dir geheime Nachrichten senden. </source>
+                <context-group purpose="location">
+                    <context context-type="sourcefile">src/app/rsa-page/rsa-page.component.html</context>
+                    <context context-type="linenumber">99,100</context>
+                </context-group>
+            </trans-unit>
+            <trans-unit id="4700941233072552465" datatype="html">
+                <source> Der <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;" />private
+                    Schlüssel<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;" /> besteht
+                    aus den Werten von n und d und wird zum <x id="START_BOLD_TEXT" ctype="x-b"
+                        equiv-text="&lt;b&gt;" />Entschlüsseln von Nachrichten<x
+                        id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;" /> verwendet. </source>
+                <context-group purpose="location">
+                    <context context-type="sourcefile">src/app/rsa-page/rsa-page.component.html</context>
+                    <context context-type="linenumber">106,109</context>
+                </context-group>
+            </trans-unit>
+            <trans-unit id="5613962830724309812" datatype="html">
+                <source>Private Key (n, d)</source>
+                <context-group purpose="location">
+                    <context context-type="sourcefile">src/app/rsa-page/rsa-page.component.html</context>
+                    <context context-type="linenumber">118</context>
+                </context-group>
+            </trans-unit>
+            <trans-unit id="6356058338928350633" datatype="html">
+                <source>Private Key kopieren</source>
+                <context-group purpose="location">
+                    <context context-type="sourcefile">src/app/rsa-page/rsa-page.component.html</context>
+                    <context context-type="linenumber">132,133</context>
+                </context-group>
+            </trans-unit>
+            <trans-unit id="1276854035294002463" datatype="html">
+                <source>Der private Schlüssel muss für immer dein Geheimnis bleiben!</source>
+                <context-group purpose="location">
+                    <context context-type="sourcefile">src/app/rsa-page/rsa-page.component.html</context>
+                    <context context-type="linenumber">144,145</context>
+                </context-group>
+            </trans-unit>
+            <trans-unit id="3994890999067601499" datatype="html">
+                <source>Nummer verschlüsseln/entschlüsseln</source>
+                <context-group purpose="location">
+                    <context context-type="sourcefile">src/app/rsa-page/rsa-page.component.html</context>
+                    <context context-type="linenumber">156</context>
+                </context-group>
+            </trans-unit>
+            <trans-unit id="4795955548811318997" datatype="html">
+                <source>Behebe zuerst noch die Fehler in den Eingabefeldern weiter oben!</source>
+                <context-group purpose="location">
+                    <context context-type="sourcefile">src/app/rsa-page/rsa-page.component.html</context>
+                    <context context-type="linenumber">182,183</context>
+                </context-group>
+                <context-group purpose="location">
+                    <context context-type="sourcefile">src/app/rsa-page/rsa-page.component.html</context>
+                    <context context-type="linenumber">220,221</context>
+                </context-group>
+            </trans-unit>
+            <trans-unit id="6021805421309430421" datatype="html">
+                <source>Text verschlüsseln/entschlüsseln</source>
+                <context-group purpose="location">
+                    <context context-type="sourcefile">src/app/rsa-page/rsa-page.component.html</context>
+                    <context context-type="linenumber">194</context>
+                </context-group>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

@@ -1,19 +1,23 @@
-<p>Das Schlüsselpaar (Public und Private Key genannt) wird aus zwei <b>sehr großen Primzahlen</b> p und q erzeugt.</p>
+<p i18n>
+    Das Schlüsselpaar (Public und Private Key genannt) wird aus zwei <b>sehr großen Primzahlen</b> p und q erzeugt.
+</p>
 
-<p>
+<p i18n>
     Um das Verfahren zu demonstrieren, verwenden wir
-    <b>sehr kleine <a href="https://de.wikipedia.org/wiki/Primzahl" target="_blank">Primzahlen</a></b
+    <b>sehr kleine <a href="https://de.wikipedia.org/wiki/Primzahl" target="_blank" i18n-href>Primzahlen</a></b
     >. <span class="text-error">Das ist aber nicht sicher!</span> Um das Verfahren wirklich sicher zu machen, müssten
     wir zwei Primzahlen mit mehr als 600 Stellen verwenden (2 × 2048-Bit).
 </p>
 
-<p class="text-hint">Drücke den <mat-icon inline>casino</mat-icon> Würfel, um eine passende Zufallszahl zu finden.</p>
+<p class="text-hint" i18n>
+    Drücke den <mat-icon inline>casino</mat-icon> Würfel, um eine passende Zufallszahl zu finden.
+</p>
 
 <form #form>
     <div class="two-columns">
         <p>
             <mat-form-field appearance="fill">
-                <mat-label>Primzahl p</mat-label>
+                <mat-label i18n>Primzahl p</mat-label>
                 <input
                     matInput
                     [(ngModel)]="p"
@@ -29,16 +33,17 @@
                     (click)="randomizeP()"
                     [attr.aria-label]="'Passende Zufallszahl erzeugen'"
                     title="Passende Zufallszahl erzeugen"
+                    i18n-title
                 >
                     <mat-icon>casino</mat-icon>
                 </button>
-                <mat-error>Der Wert p muss eine Primzahl &ge; 3 sein.</mat-error>
+                <mat-error i18n>Der Wert p muss eine Primzahl &ge; 3 sein.</mat-error>
             </mat-form-field>
         </p>
 
         <p>
             <mat-form-field appearance="fill">
-                <mat-label>Primzahl q</mat-label>
+                <mat-label i18n>Primzahl q</mat-label>
                 <input
                     matInput
                     [(ngModel)]="q"
@@ -54,19 +59,20 @@
                     (click)="randomizeQ()"
                     [attr.aria-label]="'Passende Zufallszahl erzeugen'"
                     title="Passende Zufallszahl erzeugen"
+                    i18n-title
                 >
                     <mat-icon>casino</mat-icon>
                 </button>
-                <mat-error>Der Wert q muss eine Primzahl &ge; 3 sein.</mat-error>
+                <mat-error i18n>Der Wert q muss eine Primzahl &ge; 3 sein.</mat-error>
             </mat-form-field>
         </p>
     </div>
 
     <div class="two-columns">
         <div>
-            <p>Die zwei Primzahlen p und q werden multipliziert.</p>
+            <p i18n>Die zwei Primzahlen p und q werden multipliziert.</p>
 
-            <p class="text-info">
+            <p class="text-info" i18n>
                 Diese Zahl ist öffentlich bekannt. Wenn die Primzahlen groß genug sind, dann kann man sie nicht mehr
                 ermitteln.
             </p>
@@ -112,9 +118,11 @@
     </div>
 
     <div class="two-columns">
-        <p>
+        <p i18n>
             Die
-            <a href="https://de.wikipedia.org/wiki/Eulersche_Phi-Funktion" target="_blank">Eulersche &phi;-Funktion</a>
+            <a href="https://de.wikipedia.org/wiki/Eulersche_Phi-Funktion" target="_blank" i18n-href
+                >Eulersche &phi;-Funktion</a
+            >
             wird angewendet.
         </p>
 
@@ -183,9 +191,10 @@
     </div>
 
     <div class="two-columns">
-        <p>
+        <p i18n>
             Eine Zufallszahl e wird gewählt, die kleiner als &phi; und
-            <a href="https://de.wikipedia.org/wiki/Teilerfremdheit" target="_blank">teilerfremd</a> zu &phi; ist.
+            <a href="https://de.wikipedia.org/wiki/Teilerfremdheit" target="_blank" i18n-href>teilerfremd</a> zu &phi;
+            ist.
         </p>
 
         <div>
@@ -222,7 +231,7 @@
 
     <p>
         <mat-form-field appearance="fill">
-            <mat-label>Zufallszahl e</mat-label>
+            <mat-label i18n>Zufallszahl e</mat-label>
             <input
                 matInput
                 [(ngModel)]="e"
@@ -239,25 +248,26 @@
                 (click)="randomizeE()"
                 [attr.aria-label]="'Passende Zufallszahl erzeugen'"
                 title="Passende Zufallszahl erzeugen"
+                i18n-title
             >
                 <mat-icon>casino</mat-icon>
             </button>
-            <mat-error> Der Wert e muss &le; {{ phi() }} und teilerfremd zu {{ phi() }} sein. </mat-error>
-            <mat-hint>Diese Zahl ist Teil des öffentlichen Schlüssels.</mat-hint>
+            <mat-error i18n> Der Wert e muss &le; {{ phi() }} und teilerfremd zu {{ phi() }} sein. </mat-error>
+            <mat-hint i18n>Diese Zahl ist Teil des öffentlichen Schlüssels.</mat-hint>
         </mat-form-field>
     </p>
 
     <div class="two-columns">
         <div>
-            <p>
+            <p i18n>
                 Der Wert d wird mit Hilfe der
-                <a href="https://en.wikipedia.org/wiki/Modular_multiplicative_inverse" target="_blank"
+                <a href="https://en.wikipedia.org/wiki/Modular_multiplicative_inverse" target="_blank" i18n-href
                     >modularen multiplikativen Inverse</a
                 >
                 berechnet.
             </p>
 
-            <p class="text-info">
+            <p class="text-info" i18n>
                 Diese Zahl ist Teil des privaten Schlüssels und daher geheim. Sie darf <b>nicht</b> veröffentlicht
                 werden.
             </p>
@@ -317,19 +327,19 @@
         </div>
     </div>
 
-    <p class="text-center"><b>Klicke auf den Button, um das Schlüsselpaar zu erzeugen.</b></p>
+    <p class="text-center" i18n><b>Klicke auf den Button, um das Schlüsselpaar zu erzeugen.</b></p>
 
     @if (!canUpdate()) {
-        <p class="text-center text-error">
+        <p class="text-center text-error" i18n>
             Behebe zuerst noch die Fehler in den Eingabefeldern weiter oben oder
             <a class="clickable" (click)="reset($event)">setzte die Eingabefelder zurück</a>!
         </p>
     } @else if (e() == d()) {
-        <p class="text-center text-error">
+        <p class="text-center text-error" i18n>
             Die Werte von e und d sind gleich. Wähle andere Primzahlen oder finde eine andere Zahl für e!
         </p>
 
-        <p class="text-center text-error">
+        <p class="text-center text-error" i18n>
             Du kannst auch die <a class="clickable" (click)="reset($event)">Eingabefelder zurücksetzen</a>!
         </p>
     }
@@ -341,6 +351,7 @@
             [class.shake-animation]="shouldUpdate()"
             [disabled]="!canUpdate()"
             (click)="generateKeyPair()"
+            i18n
         >
             Schlüsselpaar erzeugen
         </button>
